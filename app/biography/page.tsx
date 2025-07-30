@@ -167,7 +167,211 @@ export default function BiographyPage() {
             <h2 className="text-4xl font-bold text-orange-800 mb-4">Sacred Timeline</h2>
             <p className="text-lg text-gray-600">Key moments in Sai Baba's divine earthly journey</p>
           </div>
-          {/* TODO: Add Timeline items here */}
+         {/* Timeline Section */}
+<section className="py-20 px-6 bg-gradient-to-b from-amber-50 to-white">
+  <div className="max-w-6xl mx-auto">
+    <div className="text-center mb-16">
+      <h2 className="text-4xl font-bold text-orange-800 mb-4">Sacred Timeline</h2>
+      <p className="text-lg text-gray-600">Key moments in Sai Baba's divine earthly journey</p>
+    </div>
+
+    {/* Timeline Container */}
+    <div className="relative">
+      {/* Vertical Timeline Line */}
+      <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-orange-400 to-amber-300 hidden md:block"></div>
+      
+      {/* Timeline Items */}
+      <div className="space-y-12">
+        {/* Item 1: Birth */}
+        <div className="relative md:flex items-center justify-center gap-12">
+          <div className="md:w-1/2 md:pr-12 md:text-right mb-6 md:mb-0">
+            <div className="inline-block bg-orange-100 text-orange-800 px-4 py-1 rounded-full text-sm font-medium mb-3">
+              c. 1838
+            </div>
+            <h3 className="text-2xl font-bold text-orange-700 mb-2">Divine Arrival</h3>
+            <p className="text-gray-700">
+              Sai Baba was born in Pathri, Maharashtra. His birth name remains unknown, but devotees believe he was an incarnation of the divine sent to guide humanity.
+            </p>
+          </div>
+          
+          <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 top-1/2 w-8 h-8 rounded-full bg-gradient-to-r from-orange-500 to-amber-500 border-4 border-white shadow-lg z-10 hidden md:block"></div>
+          
+          <div className="md:w-1/2 md:pl-12">
+            <div className="bg-white rounded-xl shadow-lg p-6 border border-orange-100">
+              <div className="aspect-video bg-gradient-to-br from-orange-50 to-amber-50 rounded-lg flex items-center justify-center mb-4">
+                <div className="text-5xl text-orange-300">👶</div>
+              </div>
+              <p className="text-sm text-gray-600 italic">
+                "The divine child arrived in humble circumstances, destined to transform millions of lives."
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Item 2: Arrival in Shirdi */}
+        <div className="relative md:flex flex-row-reverse items-center justify-center gap-12">
+          <div className="md:w-1/2 md:pl-12 mb-6 md:mb-0">
+            <div className="inline-block bg-orange-100 text-orange-800 px-4 py-1 rounded-full text-sm font-medium mb-3">
+              1858
+            </div>
+            <h3 className="text-2xl font-bold text-orange-700 mb-2">Arrival in Shirdi</h3>
+            <p className="text-gray-700">
+              As a young ascetic, Sai Baba first appeared in Shirdi village at age 20. He was initially met with suspicion but gradually won hearts through his wisdom.
+            </p>
+          </div>
+          
+          <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 top-1/2 w-8 h-8 rounded-full bg-gradient-to-r from-orange-500 to-amber-500 border-4 border-white shadow-lg z-10 hidden md:block"></div>
+          
+          <div className="md:w-1/2 md:pr-12">
+            <div className="bg-white rounded-xl shadow-lg p-6 border border-orange-100">
+              <div className="aspect-video bg-gradient-to-br from-orange-50 to-amber-50 rounded-lg flex items-center justify-center mb-4">
+                <div className="text-5xl text-orange-300">🚶‍♂️</div>
+              </div>
+              <p className="text-sm text-gray-600 italic">
+                "The saint chose Shirdi as his eternal home, beginning his mission to spread universal love."
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Item 3: Settling in Dwarkamai */}
+        <div className="relative md:flex items-center justify-center gap-12">
+          <div className="md:w-1/2 md:pr-12 md:text-right mb-6 md:mb-0">
+            <div className="inline-block bg-orange-100 text-orange-800 px-4 py-1 rounded-full text-sm font-medium mb-3">
+              Early 1860s
+            </div>
+            <h3 className="text-2xl font-bold text-orange-700 mb-2">Dwarkamai Mosque</h3>
+            <p className="text-gray-700">
+              Sai Baba settled in an abandoned mosque which he named Dwarkamai. Here he established his sacred Dhuni (eternal fire) that continues to burn today.
+            </p>
+          </div>
+          
+          <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 top-1/2 w-8 h-8 rounded-full bg-gradient-to-r from-orange-500 to-amber-500 border-4 border-white shadow-lg z-10 hidden md:block"></div>
+          
+          <div className="md:w-1/2 md:pl-12">
+            <div className="bg-white rounded-xl shadow-lg p-6 border border-orange-100">
+              <div className="aspect-video bg-gradient-to-br from-orange-50 to-amber-50 rounded-lg flex items-center justify-center mb-4">
+                <div className="text-5xl text-orange-300">🕌</div>
+              </div>
+              <p className="text-sm text-gray-600 italic">
+                "In this humble abode, Baba welcomed all - rich and poor, Hindu and Muslim alike."
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Item 4: First Miracles */}
+        <div className="relative md:flex flex-row-reverse items-center justify-center gap-12">
+          <div className="md:w-1/2 md:pl-12 mb-6 md:mb-0">
+            <div className="inline-block bg-orange-100 text-orange-800 px-4 py-1 rounded-full text-sm font-medium mb-3">
+              1870s
+            </div>
+            <h3 className="text-2xl font-bold text-orange-700 mb-2">Manifestation of Miracles</h3>
+            <p className="text-gray-700">
+              Baba began performing miracles - healing the sick, materializing objects, and reading devotees' thoughts. His fame spread throughout India.
+            </p>
+          </div>
+          
+          <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 top-1/2 w-8 h-8 rounded-full bg-gradient-to-r from-orange-500 to-amber-500 border-4 border-white shadow-lg z-10 hidden md:block"></div>
+          
+          <div className="md:w-1/2 md:pr-12">
+            <div className="bg-white rounded-xl shadow-lg p-6 border border-orange-100">
+              <div className="aspect-video bg-gradient-to-br from-orange-50 to-amber-50 rounded-lg flex items-center justify-center mb-4">
+                <div className="text-5xl text-orange-300">✨</div>
+              </div>
+              <p className="text-sm text-gray-600 italic">
+                "Baba performed miracles not as displays of power, but to strengthen devotees' faith."
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Item 5: Chavadi Ritual */}
+        <div className="relative md:flex items-center justify-center gap-12">
+          <div className="md:w-1/2 md:pr-12 md:text-right mb-6 md:mb-0">
+            <div className="inline-block bg-orange-100 text-orange-800 px-4 py-1 rounded-full text-sm font-medium mb-3">
+              1909
+            </div>
+            <h3 className="text-2xl font-bold text-orange-700 mb-2">Chavadi Ritual</h3>
+            <p className="text-gray-700">
+              Baba began alternating nights between Dwarkamai and the Chavadi building. The nightly procession became a sacred ritual still reenacted today.
+            </p>
+          </div>
+          
+          <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 top-1/2 w-8 h-8 rounded-full bg-gradient-to-r from-orange-500 to-amber-500 border-4 border-white shadow-lg z-10 hidden md:block"></div>
+          
+          <div className="md:w-1/2 md:pl-12">
+            <div className="bg-white rounded-xl shadow-lg p-6 border border-orange-100">
+              <div className="aspect-video bg-gradient-to-br from-orange-50 to-amber-50 rounded-lg flex items-center justify-center mb-4">
+                <div className="text-5xl text-orange-300">🕯️</div>
+              </div>
+              <p className="text-sm text-gray-600 italic">
+                "Devotees carried Baba in procession with singing and celebration, a tradition continuing for over a century."
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Item 6: Lendi Garden */}
+        <div className="relative md:flex flex-row-reverse items-center justify-center gap-12">
+          <div className="md:w-1/2 md:pl-12 mb-6 md:mb-0">
+            <div className="inline-block bg-orange-100 text-orange-800 px-4 py-1 rounded-full text-sm font-medium mb-3">
+              c. 1910
+            </div>
+            <h3 className="text-2xl font-bold text-orange-700 mb-2">Lendi Garden</h3>
+            <p className="text-gray-700">
+              Baba created Lendi Garden, digging a well with his own hands and planting neem trees. He would spend hours here in meditation.
+            </p>
+          </div>
+          
+          <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 top-1/2 w-8 h-8 rounded-full bg-gradient-to-r from-orange-500 to-amber-500 border-4 border-white shadow-lg z-10 hidden md:block"></div>
+          
+          <div className="md:w-1/2 md:pr-12">
+            <div className="bg-white rounded-xl shadow-lg p-6 border border-orange-100">
+              <div className="aspect-video bg-gradient-to-br from-orange-50 to-amber-50 rounded-lg flex items-center justify-center mb-4">
+                <div className="text-5xl text-orange-300">🌳</div>
+              </div>
+              <p className="text-sm text-gray-600 italic">
+                "In this sacred garden, Baba nurtured both plants and devotees' souls with equal care."
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Item 7: Mahasamadhi */}
+        <div className="relative md:flex items-center justify-center gap-12">
+          <div className="md:w-1/2 md:pr-12 md:text-right mb-6 md:mb-0">
+            <div className="inline-block bg-orange-100 text-orange-800 px-4 py-1 rounded-full text-sm font-medium mb-3">
+              October 15, 1918
+            </div>
+            <h3 className="text-2xl font-bold text-orange-700 mb-2">Mahasamadhi</h3>
+            <p className="text-gray-700">
+              At approximately 2:30 PM, Sai Baba left his physical body, uttering his final words: "Allah Malik" (God is Master). His Samadhi in Shirdi remains a place of pilgrimage.
+            </p>
+          </div>
+          
+          <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 top-1/2 w-8 h-8 rounded-full bg-gradient-to-r from-orange-500 to-amber-500 border-4 border-white shadow-lg z-10 hidden md:block"></div>
+          
+          <div className="md:w-1/2 md:pl-12">
+            <div className="bg-white rounded-xl shadow-lg p-6 border border-orange-100">
+              <div className="aspect-video bg-gradient-to-br from-orange-50 to-amber-50 rounded-lg flex items-center justify-center mb-4">
+                <div className="text-5xl text-orange-300">🕊️</div>
+              </div>
+              <p className="text-sm text-gray-600 italic">
+                "Baba's physical departure marked the beginning of his eternal presence in devotees' hearts worldwide."
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Final Timeline Dot */}
+        <div className="relative flex justify-center">
+          <div className="w-8 h-8 rounded-full bg-gradient-to-r from-orange-500 to-amber-500 border-4 border-white shadow-lg"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
         </div>
       </section>
     </div>
