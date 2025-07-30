@@ -237,24 +237,26 @@ export default function HomePage() {
             <div className="space-y-6">
               <Card className="bg-white border-0 shadow-xl">
                 <CardHeader className="bg-gradient-to-r from-green-50 to-emerald-50">
-                  <CardTitle className="text-green-800 flex items-center">
-                    <Music className="h-5 w-5 mr-2" />
-                    Bhajan of the Day
+                <CardTitle className="text-green-800 flex items-center">
+                <Music className="h-5 w-5 mr-2" />
+                  Bhajan of the Day
                   </CardTitle>
-                  <CardDescription>"Om Sai Ram" - Traditional devotional</CardDescription>
-                </CardHeader>
-                <CardContent className="p-6">
-                  <div className="aspect-square bg-green-100 rounded-lg mb-4 flex items-center justify-center">
-                    <Music className="h-12 w-12 text-green-600" />
-                  </div>
-                  <Button
-                    variant="outline"
-                    className="w-full border-green-300 text-green-600 hover:bg-green-50 bg-transparent"
-                  >
-                    Play Audio
-                  </Button>
-                </CardContent>
-              </Card>
+          <CardDescription>"Sainath Tere Hajaro Haath" - Traditional devotional</CardDescription>
+            </CardHeader>
+            <CardContent className="p-6">
+              <div className="aspect-square bg-green-100 rounded-lg mb-4 flex items-center justify-center">
+              <Music className="h-12 w-12 text-green-600" />
+              </div>
+            <Button
+              variant="outline"
+                className="w-full border-green-300 text-green-600 hover:bg-green-50 bg-transparent"
+            onClick={() => window.open("https://youtu.be/pHX9Zcflmac?si=Lt6JbziEy1qSIPTD", "_blank")}
+            >
+      <Play className="h-4 w-4 mr-2" />
+      Play Audio
+    </Button>
+  </CardContent>
+</Card>
 
               <Card className="bg-white border-0 shadow-xl">
                 <CardHeader className="bg-gradient-to-r from-blue-50 to-indigo-50">
