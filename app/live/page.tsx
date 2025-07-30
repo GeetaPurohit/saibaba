@@ -9,7 +9,7 @@ import { Play, ExternalLink, Users, Clock, Heart } from "lucide-react"
 export default function LivePage() {
   useEffect(() => {
     // Redirect to YouTube live stream
-    window.location.href = "https://www.youtube.com/live/sg4oj3Thtw0?si=awcdGIdBAsefFliv"
+    window.location.href = "https://www.youtube.com/live/HDR3I-OWrgI?si=XzTcu4WDn1J_IK85"
   }, [])
 
   return (
