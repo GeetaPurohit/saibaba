@@ -8,7 +8,7 @@ import { Play, ExternalLink, Users, Clock, Heart } from "lucide-react"
 
 export default function LivePage() {
   useEffect(() => {
-    // Redirect to YouTube live stream
+    // Redirect to new YouTube live stream
     window.location.href = "https://www.youtube.com/live/HDR3I-OWrgI?si=XzTcu4WDn1J_IK85"
   }, [])
 
@@ -23,7 +23,8 @@ export default function LivePage() {
             <CardTitle className="text-3xl text-orange-800 mb-4">Redirecting to Live Stream</CardTitle>
             <p className="text-gray-600 leading-relaxed">
               You are being redirected to the live darshan stream. If the redirect doesn't work automatically, please
-              click the button below.
+              click the button below.<br /><br />
+              For the official Shirdi Sai Sansthan website, visit <a href="https://www.sai.org.in/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">sai.org.in</a>.
             </p>
           </CardHeader>
           <CardContent className="p-8">
@@ -46,7 +47,7 @@ export default function LivePage() {
               <Button
                 size="lg"
                 className="w-full bg-red-600 hover:bg-red-700 text-white shadow-lg"
-                onClick={() => window.open("https://www.youtube.com/live/sg4oj3Thtw0?si=awcdGIdBAsefFliv", "_blank")}
+                onClick={() => window.open("https://www.youtube.com/live/HDR3I-OWrgI?si=XzTcu4WDn1J_IK85", "_blank")}
               >
                 <Play className="mr-2 h-5 w-5" />
                 Watch Live Darshan on YouTube
@@ -54,7 +55,9 @@ export default function LivePage() {
               </Button>
 
               <p className="text-sm text-gray-500">
-                Experience the divine presence of Shirdi Sai Baba through our continuous live stream
+                Experience the divine presence of Shirdi Sai Baba through our continuous live stream.
+                <br />
+                <a href="https://www.sai.org.in/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">Official Mandir Live</a>
               </p>
             </div>
           </CardContent>
