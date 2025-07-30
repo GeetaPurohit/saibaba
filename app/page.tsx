@@ -23,11 +23,12 @@ export default function HomePage() {
           <div className="mb-12 relative">
             <div className="absolute inset-0 bg-gradient-to-r from-orange-200 to-amber-200 rounded-full blur-3xl opacity-30 scale-150"></div>
             <Image
-              src="/placeholder.svg?height=240&width=240"
+              src="/saibaba.jpg"
               alt="Shirdi Sai Baba"
-              width={240}
-              height={240}
-              className="relative mx-auto rounded-full border-8 border-white shadow-2xl ring-4 ring-orange-200"
+              width={250}
+              height={250}
+              className="rounded-full shadow-lg"
+              priority
             />
             <div className="absolute -top-4 -right-4 bg-gradient-to-r from-orange-500 to-amber-500 rounded-full p-3 shadow-lg">
               <Sparkles className="h-6 w-6 text-white" />
