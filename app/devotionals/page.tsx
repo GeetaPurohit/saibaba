@@ -9,7 +9,7 @@ import Image from "next/image"
 
 export default function DevotionalsPage() {
   const handleLiveStream = () => {
-    window.open("https://www.youtube.com/live/sg4oj3Thtw0?si=awcdGIdBAsefFliv", "_blank")
+    window.open("https://www.youtube.com/live/_6GjOYj9-Ek?si=9wBAUbT9OT6dDbdt", "_blank")
   }
 
   return (
@@ -51,10 +51,13 @@ export default function DevotionalsPage() {
             </CardHeader>
             <CardContent>
               <div className="aspect-video bg-orange-800 rounded-lg mb-6 flex items-center justify-center">
-                <div className="text-center">
-                  <Play className="h-16 w-16 mx-auto mb-4 text-orange-200" />
-                  <p className="text-orange-200">Live Stream Available</p>
-                </div>
+                <Image
+                  src="/Sai_gold_full.jpg"
+                  alt="Sai Baba at Samadhi Mandir"
+                  width={800}
+                  height={768}
+                  className="rounded-lg object-cover"
+                />
               </div>
               <div className="flex flex-col sm:flex-row items-center justify-between space-y-4 sm:space-y-0">
                 <div className="flex items-center space-x-4">
@@ -98,11 +101,11 @@ export default function DevotionalsPage() {
                   <CardContent>
                     <div className="aspect-video bg-orange-100 rounded-lg mb-4 flex items-center justify-center">
                       <Image
-                        src="/placeholder.svg?height=120&width=200&text=Morning+Aarti"
+                        src="/Shirdi_Sai_Baba.jpg"
                         alt="Morning Aarti"
-                        width={200}
-                        height={120}
-                        className="rounded-lg"
+                        width={535}
+                        height={768}
+                        className="rounded-lg object-cover"
                       />
                     </div>
                     <div className="flex items-center justify-between">
@@ -130,11 +133,11 @@ export default function DevotionalsPage() {
                   <CardContent>
                     <div className="aspect-video bg-orange-100 rounded-lg mb-4 flex items-center justify-center">
                       <Image
-                        src="/placeholder.svg?height=120&width=200&text=Evening+Aarti"
+                        src="/Shirdi_sai2.jpg"
                         alt="Evening Aarti"
-                        width={200}
-                        height={120}
-                        className="rounded-lg"
+                        width={768}
+                        height={1013}
+                        className="rounded-lg object-cover"
                       />
                     </div>
                     <div className="flex items-center justify-between">
@@ -162,11 +165,11 @@ export default function DevotionalsPage() {
                   <CardContent>
                     <div className="aspect-video bg-orange-100 rounded-lg mb-4 flex items-center justify-center">
                       <Image
-                        src="/placeholder.svg?height=120&width=200&text=Noon+Aarti"
+                        src="/Sai_gold_full.jpg"
                         alt="Noon Aarti"
-                        width={200}
-                        height={120}
-                        className="rounded-lg"
+                        width={800}
+                        height={768}
+                        className="rounded-lg object-cover"
                       />
                     </div>
                     <div className="flex items-center justify-between">
@@ -180,71 +183,6 @@ export default function DevotionalsPage() {
                         </Button>
                       </div>
                     </div>
-                  </CardContent>
-                </Card>
-              </div>
-            </TabsContent>
-
-            <TabsContent value="bhajans" className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-6">
-                <Card className="border-orange-200">
-                  <CardHeader>
-                    <CardTitle className="text-orange-800">Popular Bhajans</CardTitle>
-                    <CardDescription>Most loved devotional songs by our community</CardDescription>
-                  </CardHeader>
-                  <CardContent className="space-y-4">
-                    {[
-                      { title: "Om Sai Ram", duration: "4:32", plays: "25K" },
-                      { title: "Sai Tera Naam", duration: "5:18", plays: "18K" },
-                      { title: "Shirdi Wale Sai Baba", duration: "6:45", plays: "22K" },
-                      { title: "Sai Ram Sai Shyam", duration: "4:12", plays: "15K" },
-                    ].map((bhajan, index) => (
-                      <div key={index} className="flex items-center justify-between p-3 bg-orange-50 rounded-lg">
-                        <div className="flex items-center space-x-3">
-                          <Button size="sm" variant="ghost" className="text-orange-600">
-                            <Play className="h-4 w-4" />
-                          </Button>
-                          <div>
-                            <div className="font-medium text-gray-800">{bhajan.title}</div>
-                            <div className="text-sm text-gray-600">
-                              {bhajan.duration} • {bhajan.plays} plays
-                            </div>
-                          </div>
-                        </div>
-                        <Button size="sm" variant="ghost">
-                          <Heart className="h-4 w-4" />
-                        </Button>
-                      </div>
-                    ))}
-                  </CardContent>
-                </Card>
-
-                <Card className="border-orange-200">
-                  <CardHeader>
-                    <CardTitle className="text-orange-800">Featured Collections</CardTitle>
-                    <CardDescription>Curated playlists for different occasions</CardDescription>
-                  </CardHeader>
-                  <CardContent className="space-y-4">
-                    {[
-                      { title: "Morning Devotion", count: "12 bhajans", theme: "Start your day" },
-                      { title: "Evening Peace", count: "15 bhajans", theme: "End with serenity" },
-                      { title: "Festival Special", count: "20 bhajans", theme: "Celebration songs" },
-                      { title: "Meditation Mix", count: "8 bhajans", theme: "Deep contemplation" },
-                    ].map((collection, index) => (
-                      <div key={index} className="flex items-center justify-between p-3 bg-green-50 rounded-lg">
-                        <div className="flex items-center space-x-3">
-                          <Button size="sm" variant="ghost" className="text-green-600">
-                            <Play className="h-4 w-4" />
-                          </Button>
-                          <div>
-                            <div className="font-medium text-gray-800">{collection.title}</div>
-                            <div className="text-sm text-gray-600">
-                              {collection.count} • {collection.theme}
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    ))}
                   </CardContent>
                 </Card>
               </div>
