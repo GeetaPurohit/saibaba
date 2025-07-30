@@ -1,6 +1,7 @@
-import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { BookOpen, Star, Heart } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import ScrollButton from "@/components/ScrollButton" // New component for scroll functionality
 
 export default function BiographyPage() {
   return (
@@ -19,23 +20,23 @@ export default function BiographyPage() {
             Discover the miraculous journey of Shirdi Sai Baba, the divine saint who transformed millions through love, compassion, and universal brotherhood.
           </p>
           <div className="flex justify-center gap-6">
-            <Button
+            <ScrollButton
+              targetId="full-bio"
               size="lg"
               className="bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-700 hover:to-amber-700 shadow-lg"
-              onClick={() => document.getElementById('full-bio')?.scrollIntoView({ behavior: 'smooth' })}
             >
               <BookOpen className="mr-2 h-5 w-5" />
               Read Full Biography
-            </Button>
-            <Button
+            </ScrollButton>
+            <ScrollButton
+              targetId="miracles"
               size="lg"
               variant="outline"
               className="border-orange-300 text-orange-600 hover:bg-orange-50"
-              onClick={() => document.getElementById('miracles')?.scrollIntoView({ behavior: 'smooth' })}
             >
               <Star className="mr-2 h-5 w-5" />
               View Miracles
-            </Button>
+            </ScrollButton>
           </div>
         </div>
       </section>
@@ -64,7 +65,7 @@ export default function BiographyPage() {
 
           <h3 className="text-2xl font-medium text-orange-700 mb-4">Teachings of Unity &amp; Compassion</h3>
           <p>
-            Central to his message were <strong>Shraddha</strong> (faith) and <strong>Saburi</strong> (patience). Baba urged devotees to face life’s challenges with steadfast devotion.
+            Central to his message were <strong>Shraddha</strong> (faith) and <strong>Saburi</strong> (patience). Baba urged devotees to face life's challenges with steadfast devotion.
           </p>
 
           <blockquote className="border-l-4 border-amber-400 pl-4 italic my-6">
@@ -75,7 +76,7 @@ export default function BiographyPage() {
           <ul className="list-disc list-inside space-y-3">
             <li><strong>Healing Touch:</strong> Chronic ailments vanished through earnest prayers and the sacred <strong>Udi</strong>.</li>
             <li><strong>Inexhaustible Charity:</strong> Single baskets of food fed hundreds during famine.</li>
-            <li><strong>Nature’s Mastery:</strong> Storms calmed with a raised hand.</li>
+            <li><strong>Nature's Mastery:</strong> Storms calmed with a raised hand.</li>
             <li><strong>Miraculous Harvests:</strong> Blessed grains yielded abundant crops.</li>
           </ul>
 
@@ -93,7 +94,7 @@ export default function BiographyPage() {
 
           <h3 className="text-2xl font-medium text-orange-700 mb-4">Enduring Legacy</h3>
           <p>
-            Globally, temples honor Sai Baba’s message: <strong>“Love All, Help Ever, Hurt Never.”</strong>
+            Globally, temples honor Sai Baba's message: <strong>"Love All, Help Ever, Hurt Never."</strong>
           </p>
 
           <div className="text-center mt-12">
@@ -110,7 +111,7 @@ export default function BiographyPage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-orange-800 mb-4">Sacred Timeline</h2>
-            <p className="text-lg text-gray-600">Key moments in Sai Baba’s divine earthly journey</p>
+            <p className="text-lg text-gray-600">Key moments in Sai Baba's divine earthly journey</p>
           </div>
           {/* TODO: Add Timeline items here */}
         </div>
@@ -118,4 +119,3 @@ export default function BiographyPage() {
     </div>
   )
 }
-
