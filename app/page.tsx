@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import ScrollButton from "@/components/ui/ScrollButton";
 import { Badge } from "@/components/ui/badge"
 import { Calendar, Heart, Users, Music, BookOpen, Globe, Play, Star, Sparkles, Clock, MapPin } from "lucide-react"
 import Image from "next/image"
