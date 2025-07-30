@@ -1,7 +1,7 @@
 import { Badge } from "@/components/ui/badge"
 import { BookOpen, Star, Heart } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import ScrollButton from "@/components/ScrollButton" // New component for scroll functionality
+import ScrollButton from "@/components/ui/ScrollButton"
 
 export default function BiographyPage() {
   return (
