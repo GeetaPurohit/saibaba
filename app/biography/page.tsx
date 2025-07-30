@@ -1,7 +1,8 @@
 import { Badge } from "@/components/ui/badge"
-import { BookOpen, Star, Heart } from "lucide-react"
+import { BookOpen, Star, Heart, Play } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import ScrollButton from "@/components/ui/ScrollButton"
+import Image from "next/image"
 
 export default function BiographyPage() {
   return (
@@ -102,6 +103,58 @@ export default function BiographyPage() {
               <Heart className="mr-2 h-5 w-5" />
               Seek His Blessings
             </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Movie Section */}
+      <section className="py-16 px-6 bg-gradient-to-r from-orange-50 to-amber-50">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="relative rounded-xl overflow-hidden shadow-xl border-2 border-orange-200">
+              <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full aspect-[2/3]" />
+              <div className="absolute inset-0 bg-gradient-to-t from-orange-900/70 to-transparent flex items-end p-6">
+                <div className="text-white">
+                  <h3 className="text-xl font-bold">Shirdi Ke Sai Baba (1977)</h3>
+                  <p className="text-orange-200">Iconic Biographical Film</p>
+                </div>
+              </div>
+              <div className="absolute top-4 right-4 bg-orange-500 text-white px-3 py-1 rounded-full text-sm font-bold">
+                Classic
+              </div>
+            </div>
+            
+            <div>
+              <Badge className="bg-orange-200 text-orange-800 mb-4">Divine Cinema</Badge>
+              <h2 className="text-3xl font-bold text-orange-800 mb-4">Experience Sai Baba's Life Through Film</h2>
+              <p className="text-lg text-gray-700 mb-6">
+                Watch the acclaimed 1977 biographical film "Shirdi Ke Sai Baba", directed by Ashok Bhushan. 
+                This classic portrayal features Sudhir Dalvi as Sai Baba and beautifully captures his divine 
+                miracles, teachings, and compassion.
+              </p>
+              <ul className="space-y-3 mb-8">
+                <li className="flex items-start">
+                  <Star className="h-5 w-5 text-orange-500 mr-2 mt-0.5 flex-shrink-0" />
+                  <span><strong>Authentic Portrayal:</strong> Faithfully depicts Baba's life in Shirdi village</span>
+                </li>
+                <li className="flex items-start">
+                  <Star className="h-5 w-5 text-orange-500 mr-2 mt-0.5 flex-shrink-0" />
+                  <span><strong>Iconic Performance:</strong> Sudhir Dalvi's memorable embodiment of Sai Baba</span>
+                </li>
+                <li className="flex items-start">
+                  <Star className="h-5 w-5 text-orange-500 mr-2 mt-0.5 flex-shrink-0" />
+                  <span><strong>Spiritual Journey:</strong> Chronicles Baba's miracles and divine wisdom</span>
+                </li>
+              </ul>
+              <Button 
+                size="lg"
+                className="bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-700 hover:to-amber-700 shadow-lg group"
+                onClick={() => window.open("https://youtube.com/playlist?list=PLAD6AAF5DB6CE1876&si=zgRB6NRahyLyi7ab", "_blank")}
+              >
+                <Play className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
+                Watch Full Movie
+              </Button>
+            </div>
           </div>
         </div>
       </section>
