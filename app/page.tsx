@@ -56,7 +56,7 @@ export default function HomePage() {
             <Button
               size="lg"
               className="bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-700 hover:to-amber-700 text-white px-10 py-4 text-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
-              onClick={() => window.open("https://www.youtube.com/channel/UCvJEdW_JkQWqzuJ-kL5wWdQ", "_blank")}
+              onClick={() => window.open("https://www.youtube.com/live/HDR3I-OWrgI?si=XzTcu4WDn1J_IK85", "_blank")}
             >
               <Play className="mr-3 h-6 w-6" />
               Join Daily Aarti
@@ -216,7 +216,7 @@ export default function HomePage() {
                   <Button
                     size="lg"
                     className="bg-white text-orange-600 hover:bg-gray-100 flex-1 shadow-lg"
-                    onClick={() => window.open("https://www.youtube.com/channel/UCvJEdW_JkQWqzuJ-kL5wWdQ", "_blank")}
+                    onClick={() => window.open("https://www.youtube.com/live/HDR3I-OWrgI?si=XzTcu4WDn1J_IK85", "_blank")}
                   >
                     <Play className="h-5 w-5 mr-2" />
                     Join Live Stream
@@ -225,7 +225,7 @@ export default function HomePage() {
                     size="lg"
                     variant="outline"
                     className="border-white text-white hover:bg-white hover:text-orange-600 flex-1 bg-transparent"
-                    onClick={() => window.open("https://www.youtube.com/channel/UCvJEdW_JkQWqzuJ-kL5wWdQ", "_blank")}
+                    onClick={() => window.open("https://www.youtube.com/live/HDR3I-OWrgI?si=XzTcu4WDn1J_IK85", "_blank")}
                   >
                     Audio Only
                   </Button>
